@@ -1,6 +1,9 @@
 ## Running the app
 
 ```bash
+# install module
+$ npm i
+
 # migrations database
 $ npx prisma migrate dev --name init
 
