@@ -1,0 +1,5 @@
+-- AlterTable
+ALTER TABLE "Book" ALTER COLUMN "point" SET DEFAULT 5;
+
+-- AlterTable
+ALTER TABLE "User" ADD COLUMN     "point" INTEGER NOT NULL DEFAULT 0;
