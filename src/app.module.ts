@@ -4,6 +4,8 @@ import { AppService } from './app.service';
 import { UserModule } from './modules/user/user.module';
 import { OrderModule } from './modules/order/order.module';
 import { RabbitMQModule } from './rabbitmq.module';
+import * as dotenv from 'dotenv';
+dotenv.config();
 
 @Module({
   imports: [UserModule, OrderModule, RabbitMQModule],

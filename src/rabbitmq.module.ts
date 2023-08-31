@@ -9,7 +9,7 @@ import { RabbitMQService } from './rabbitmq.service';
         name: 'rabbit-mq-module',
         transport: Transport.RMQ,
         options: {
-          urls: ['amqp://localhost:5672'],
+          urls: [process.env.RABBITMQ_URL],
           queue: 'rabbit-mq-logs',
         },
       },
